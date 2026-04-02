@@ -7,6 +7,29 @@
   const text = url.searchParams.get("text") || "Hello! How can we help you?";
   const position = url.searchParams.get("position") || "right";
 
+  const iframe = document.createElement("iframe");
+
+  iframe.style.position = "fixed";
+  iframe.style.bottom = "20px";
+  iframe.style.width = "360px";
+  iframe.style.height = "440px";
+  iframe.style.border = "none";
+  iframe.style.zIndex = "999999";
+
+  
+  if (position === "left") {
+    iframe.style.left = "20px";
+  } else {
+    iframe.style.right = "20px";
+  }
+
+  document.body.appendChild(iframe);
+
+  const doc = iframe.contentWindow.document;
+
+  doc.open();
+  doc.write(`
+  
   const link = 'https://wa.me${phone}?text=${encodeURIComponent(text)}'
 
   //HTML 
@@ -43,12 +66,7 @@
   const style = document.createElement("style");
   style.innerHTML = `
 
-  .wa-widget * {
-    box-sizing: border-box;
-  }
-
   .wa-widget {
-    all: initial;
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -57,9 +75,7 @@
     align-items: flex-end;
     z-index: 9999;
     font-family: "Libre Baskerville", serif;
-    font-size: 16px;
     font-weight: 400;
-    transform: scale(1) !important;
   }
 
   img {
