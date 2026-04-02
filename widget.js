@@ -57,7 +57,9 @@
     align-items: flex-end;
     z-index: 9999;
     font-family: "Libre Baskerville", serif;
+    font-size: 16px;
     font-weight: 400;
+    transform: scale(1) !important;
   }
 
   img {
