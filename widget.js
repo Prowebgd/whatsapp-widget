@@ -42,8 +42,13 @@
   // CSS
   const style = document.createElement("style");
   style.innerHTML = `
-  
+
+  .wa-widget * {
+    box-sizing: border-box;
+  }
+
   .wa-widget {
+    all: initial;
     position: fixed;
     right: 20px;
     bottom: 20px;
