@@ -11,6 +11,8 @@
   const img = document.createElement("img");
   img.src = "https://cdn.jsdelivr.net/gh/prowebgd/whatsapp-widget@main/images/avatar.png";
 
+    img.style.width = "40px";
+document.body.appendChild(img);
   const fontLink = document.createElement("link");
   fontLink.href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wdth,wght@75..100,100..900&display=swap";
   fontLink.rel = "stylesheet";
