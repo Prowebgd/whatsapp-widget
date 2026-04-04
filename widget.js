@@ -37,10 +37,7 @@
     <a href="${link}" class="wa__widget-link">Start WhatsApp Chat</a>
   </div>
   <div class="wa__widget-button">
-  <img width="36" height="36"
-src="${baseUrl}images/avatar.png">
-alt="WhatsApp"
-class="wa__widget-icon">
+  <img width="40" height="40" src="${baseUrl}images/avatar.png" alt="WhatsApp" class="wa__widget-icon">
   </div>
   `;
  
