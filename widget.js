@@ -9,7 +9,7 @@
   const baseUrl = script.src.replace("widget.js", "");
 
   const img = document.createElement("img");
-  img.src = "https://cdn.jsdelivr.net/gh/prowebgd/REPO@main/images/avatar.png";
+  img.src = "https://cdn.jsdelivr.net/gh/prowebgd/whatsapp-widget@main/images/avatar.png";
 
   const fontLink = document.createElement("link");
   fontLink.href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wdth,wght@75..100,100..900&display=swap";
