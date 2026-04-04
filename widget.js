@@ -18,7 +18,7 @@
   const text = "Hello! How can we help you?"
   const position = "right";
 
-  const link = `https://wa.me${phone}?text=${encodeURIComponent(text)}`
+  const link = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`
 
   
   const widget = document.createElement("div");
@@ -37,7 +37,7 @@
     <a href="${link}" class="wa__widget-link">Start WhatsApp Chat</a>
   </div>
   <div class="wa__widget-button">
-  <img width="40" height="40" src="${baseUrl}images/avatar.png" alt="WhatsApp" class="wa__widget-icon">
+  <img src="${baseUrl}images/avatar.png" alt="WhatsApp" class="wa__widget-icon">
   </div>
   `;
  
