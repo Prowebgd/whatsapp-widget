@@ -8,11 +8,6 @@
 
   const baseUrl = script.src.replace("widget.js", "");
 
-  const img = document.createElement("img");
-  img.src = "https://cdn.jsdelivr.net/gh/prowebgd/whatsapp-widget@main/images/avatar.png";
-
-    img.style.width = "40px";
-document.body.appendChild(img);
   const fontLink = document.createElement("link");
   fontLink.href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wdth,wght@75..100,100..900&display=swap";
   fontLink.rel = "stylesheet";
@@ -43,7 +38,7 @@ document.body.appendChild(img);
   </div>
   <div class="wa__widget-button">
   <img width="36" height="36"
-src="https://cdn.jsdelivr.net/gh/Prowebgd/whatsapp-widget@main/images/avatar.png"
+src="${baseUrl}images/avatar.png">
 alt="WhatsApp"
 class="wa__widget-icon">
   </div>
@@ -122,7 +117,7 @@ class="wa__widget-icon">
     margin-bottom: 20px;
     animation: fadeIn .5s ease;
     font-family: "Roboto", sans-serif;
-    lign-heght: 1.4;
+    line-height: 1.4;
   }
   
   @keyframes fadeIn {
@@ -174,7 +169,7 @@ class="wa__widget-icon">
     border-radius: 20px;
     margin-top: 20px;
     margin-left: 10px;
-    marging-right: 10px;
+    margin-right: 10px;
     padding: 10px;
     font-size: 18px;
     transition: .3s;
