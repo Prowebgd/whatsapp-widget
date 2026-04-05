@@ -12,7 +12,7 @@
 
     widget.innerHTML = `
       <div class="wa__widget-button">
-        <img class="wa__widget-icon" src="images/icon.png" alt="wa">
+        <img class="wa__widget-icon" src="images/avatar.png" alt="wa">
       </div>
     `;
 
