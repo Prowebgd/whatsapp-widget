@@ -12,7 +12,7 @@
 
     widget.innerHTML = `
       <div class="wa__widget-button">
-        <img class="wa__widget-icon" src="https://cdn.jsdelivr.net/gh/Prowebgd/whatsapp-widget@main/images/avatar.png" alt="wa">
+        <img class="wa__widget-icon" src="https://cdn.jsdelivr.net/gh/Prowebgd/whatsapp-widget@main/images/icons8-whatsapp-50.png" alt="wa">
       </div>
     `;
 
