@@ -7,6 +7,10 @@
 
     const position = url.searchParams.get("position") || "right";
 
+    const img = document.createElement("img");
+img.src = "https://cdn.jsdelivr.net/gh/Prowebgd/whatsapp-widget@main/images/icons8-whatsapp-50.png";
+img.style.width = "50px";
+document.body.appendChild(img);
     const widget = document.createElement("div");
     widget.className = "wa__widget";
 
